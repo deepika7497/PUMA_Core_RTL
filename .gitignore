@@ -1,0 +1,32 @@
+# Questa sim projects and other files #
+#######################################
+*.cr.mti
+*.mpf
+*.wlf
+transcript
+wlft*
+work/*
+Synthesis/*
+
+testbench/tb_mvm_post_synthesis.sv
+
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
