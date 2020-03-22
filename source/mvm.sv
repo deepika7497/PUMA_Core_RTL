@@ -1,4 +1,4 @@
-`include "config.sv"
+`include "../include/config.sv"
 
 module mvm( input clk, reset, reset_wt, mvm_start, prog_wt,
             input logic [`xbar_in_bits-1:0] xbar_input[0:`xbar_size-1],

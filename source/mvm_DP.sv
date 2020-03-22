@@ -1,5 +1,5 @@
 
-`include "config.sv"
+`include "../include/config.sv"
 
 module mvm_DP(  input   bit     clk,
                 input   bit     reset,

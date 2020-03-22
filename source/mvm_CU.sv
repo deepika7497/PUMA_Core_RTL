@@ -1,4 +1,4 @@
-`include "config.sv"
+`include "../include/config.sv"
 
 module mvm_CU(  input   logic   clk,
                 input   logic   reset,

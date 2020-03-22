@@ -1,5 +1,0 @@
-// memory data file (do not edit the following line - required for mem load use)
-// instance=/tb_mvm/xbar_input
-// format=bin addressradix=h dataradix=b version=1.0 wordsperline=4
-@0 0000000000000001 0000000000000000 0000000000000000 0000000000000001
-@4 0000000000000000 0000000000000001 0000000000000001 0000000000000000

@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 
-`include "../source/config.sv"
+`include "../include/config.sv"
 `default_nettype none
 
 module tb_mvm;
@@ -35,10 +35,10 @@ always #(CLK_PERIOD/2)  clk = ~clk;
 initial begin
     #1  reset<=1'bx; reset_wt<=1'bx; clk<=0; mvm_start<=0; prog_wt<=0;
     $display("Loading xbar_wt_memory");
-    // $readmemb("memfiles/xbar_all1.mem", xbar_weights);
-    $readmemb("memfiles/xbar_weights_real.mem", xbar_weights);
+    $readmemb("memfiles/xbar_all1.mem", xbar_weights);
+    //$readmemb("memfiles/xbar_weights_real.mem", xbar_weights);
     $display("Loading xbar Input Memory");
-    $readmemb("memfiles/xbar_in_v2_half1.mem", xbar_input, 0);
+    $readmemb("memfiles/xbar_in_half1.mem", xbar_input, 0);
 
     #1  reset<=1'b1; reset_wt<=1'b1; clk<=0; mvm_start<=0;
     #(CLK_PERIOD)  reset<=1; reset_wt<=1'b0;

@@ -1,4 +1,4 @@
-`include "config.sv"
+`include "../include/config.sv"
 
 module xbar_wt_mem( input clk, reset,
                     weight_mem_bus.mem_mode mem_bus);
